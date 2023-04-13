@@ -1,0 +1,17 @@
+<div>
+    <form (ngSubmit)="onSubmit(jobPostForm)" #jobPostForm="ngForm">
+        <label>
+          Title:
+          <input type="text" name="title" [(ngModel)]="jobPost.title" required>
+        </label>
+        <label>
+          Description:
+          <textarea name="description" [(ngModel)]="jobPost.description" required></textarea>
+        </label>
+        <label>
+          Salary:
+          <input type="number" name="salary" [(ngModel)]="jobPost.salary" required>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+</div>
